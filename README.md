@@ -2,8 +2,8 @@
 
 - [General info](#general-info)
 - [Technologies](#technologies)
-- [Contents](#content)
 - [Members](#members)
+- [Contents](#content)
 
 ## General Info
 
@@ -18,14 +18,14 @@ Technologies used for this project:
 - Bootstrap
 - ...
 
-## Content
-
-Content of the project folder:
-
 ## Members
 
 Dujin Kim / added sub.html
 Abell Rede / added main.html
+
+## Content
+
+Content of the project folder:
 
 ```
  Top level of project folder:
