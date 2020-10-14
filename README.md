@@ -1,5 +1,6 @@
 ##Members
 Dujin Kim / added sub.html
+Vincent Wong / added healthfeed.html
 
 ## My Web Application (Title)
 
