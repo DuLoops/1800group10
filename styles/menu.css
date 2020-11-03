@@ -1,1 +1,44 @@
+:root {
+  --primary-color: #0065A3
+  --secondary-color: #263A7A
+  --point-color: #FFC91B
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto',sans-serif;
+}
+.content{
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.clr{
+  clear:both;
+}
+/* .app-header{
+ 
+} */
+.main-menu {
+  margin: 10px auto;
+}
+.main-menu img {
+  width:150px;
+  float: left;
+  margin-right: 10px;
+}
+.gym-info{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+
+}
+
+.grid{
+  display: grid;
+  grid-column: 1fr 1fr;
+}
 
