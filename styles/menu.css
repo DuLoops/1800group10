@@ -1,8 +1,10 @@
 :root {
-  --primary-color: #0065A3
-  --secondary-color: #263A7A
-  --point-color: #FFC91B
+  --primary-color: #0065A3;
+  --secondary-color: #263A7A;
+  --point-color: #FFC91B;
 }
+
+
 * {
   margin: 0;
   padding: 0;
@@ -19,9 +21,9 @@ body{
 .clr{
   clear:both;
 }
-/* .app-header{
- 
-} */
+.app-header{
+ background-color: var(--secondary-color);
+}
 .main-menu {
   margin: 10px auto;
 }
