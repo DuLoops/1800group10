@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #0065A3;
+  --primary-color: #81B0FF;
   --secondary-color: #263A7A;
-  --point-color: #FFC91B;
+  --point-color: #FFCF00;
 }
 
 
@@ -12,35 +12,110 @@
 }
 body{
   font-family: 'Roboto',sans-serif;
+  color: var(--secondary-color);
 }
 .content{
   width: 90%;
   margin: 0 auto;
   overflow: hidden;
 }
+/* .sub-menu{
+  width: 90%;
+  margin: 0 auto;
+} */
 .clr{
   clear:both;
 }
 .app-header{
- background-color: var(--secondary-color);
+  display: inline-block;
+  color: var(--secondary-color);
+  border: var(--secondary-color) solid 2px;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px 0 5px 10px;
+  position: sticky;
 }
+
 .main-menu {
-  margin: 10px auto;
+  margin: 10px auto 30px;
 }
 .main-menu img {
   width:150px;
   float: left;
-  margin-right: 10px;
+  margin-right: 20px;
+  border-radius: 5px;
 }
 .gym-info{
   display: flex;
   flex-flow: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  height: 130px;
+}
+.gym-link{
+  color: var(--secondary-color);
+}
 
+.review-text{
+  float:left;
+  width: 40%;
+}
+.review-link{
+  float: right;
+  padding: 15px 40px;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: var(--poi-color);
 }
 
 .grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 80px;
+  grid-gap: 5px;
+  margin: 20px 0;
+}
+.item{
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  padding: 5px;
+  position: relative;
+}
+.item a{
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+.rating{
+  margin-top: 10px;
+  display:block;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+.fa-star{
+  color: var(--point-color);
 }
 
+.map{
+  content:url(http://placehold.it/350x250)
+}
+.app-menu{
+  /* display:flex;
+  justify-content: space-evenly; */
+  background-color: var(--primary-color);
+  position: absolute;
+  width:100%;
+  bottom:0;
+  text-align: center;
+}
+.app-menu i{
+  font-size:30px;
+}
+.app-menu div{
+  padding:10px;
+}
+.home-menu{
+  box-shadow:inset 0px 0px 10px var(--secondary-color);
+  float:left;
+  width:50%;
+}
