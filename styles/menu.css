@@ -51,7 +51,7 @@ body{
   justify-content: space-evenly;
   height: 130px;
 }
-.gym-link{
+#gym-link{
   color: var(--secondary-color);
 }
 
@@ -59,13 +59,12 @@ body{
   float:left;
   width: 40%;
 }
-.review-link{
+#review-link{
   float: right;
   padding: 15px 40px;
   border-radius: 10px;
   text-decoration: none;
   background-color: var(--primary-color);
-  color: var(--poi-color);
 }
 
 .grid{
