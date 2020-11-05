@@ -1,0 +1,139 @@
+:root {
+  --primary-color: #81B0FF;
+  --secondary-color: #263A7A;
+  --point-color: #FFCF00;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  overflow: none;
+}
+
+.app-header {
+  background-color: var(--primary-color);
+  box-shadow: 10px 3px 10px #888;
+}
+
+.app-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 7px;
+}
+
+.app-header h4 {
+  color: #FFCF00;
+  text-shadow: #111111;
+  font-size: 26pt;
+  padding-left: 5px;
+  font-family: "Poppins", sans-serif;
+  -webkit-text-stroke: #111111;
+  -webkit-text-stroke-width: 0px;
+}
+
+.app-header .logo {
+  width: 23px;
+}
+
+.sub-header {
+  margin: 0 auto 16 auto;
+  width: 100%;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.sub-header .search {
+  padding: 10px;
+  width: 100%;
+  border-color: var(--secondary-color);
+  border-radius: 10px;
+  position: sticky;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto 30px;
+}
+
+.grid, a { 
+  text-decoration: none;
+  color: #111111;
+}
+.grid .item {
+  border-top: var(--point-color)  solid;
+  margin-bottom: 20px;
+}
+
+.grid .item img {
+  width: 120px;
+  float: left;
+  margin-right: 40px;
+  border-radius: 10px;
+  height: 120px;
+  margin-top: 20px;
+}
+
+.rating{
+  display: flex;
+  flex-flow: column;
+  height: 120px;
+  text-align: right;
+  font-size: 11pt;
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+.app-footer{
+  /* display:flex;
+  justify-content: space-evenly; */
+  /* Comment out "position: fixed" in order to make
+  footer sticky and uncomment flex: 1 0 auto;
+  flex: 1 0 auto;*/
+  background-color: var(--primary-color);
+  position: fixed;
+  width:100%;
+  bottom:0;
+  text-align: center;
+}
+
+.app-footer  i{
+  font-size:30px;
+}
+
+.app-footer div{
+  padding:10px;
+}
+
+.home-menu{
+  box-shadow:inset 0px 0px 10px var(--secondary-color);
+  float:left;
+  width:50%;
+}
+
+
+
+
+
