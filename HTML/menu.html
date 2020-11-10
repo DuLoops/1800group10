@@ -40,7 +40,7 @@
         </div>
       </div>
       <div class="sub-menu">
-        <div class="review">
+        <!-- <div class="review">
           <div class="review-text">
             <p>Review Rating</p>
             <span id="review-rating"><i class="fas fa-star"><i class="fas fa-star-half-alt"></i></i><i
@@ -50,10 +50,10 @@
             <a id="review-link" href="sub/review.html">Review</a>
           </div>
         </div>
-        <div class="clr"></div>
+        <div class="clr"></div> -->
         <div class="items grid">
           <div class="item">
-            <a href="sub/covid.html">COVID-19 Regulations</a>
+            <a href="sub/covid.html">Review</a>
             <span class="rating" id="covid-rating"><i class="fas fa-star"><i class="fas fa-star-half-alt"></i></i><i
                 class="far fa-star"></i></span>
           </div>
@@ -63,7 +63,7 @@
                 class="far fa-star"></i></span>
           </div>
           <div class="item">
-            <a href="sub/facilities.html">Facilities</a>
+            <a href="sub/facilities.html">COVID-19 Regulationss</a>
             <span class="rating" id="facilities-rating"><i class="fas fa-star"><i class="fas fa-star-half-alt"></i></i><i
                 class="far fa-star"></i></span>
           </div>
@@ -75,7 +75,7 @@
 
         </div>
       </div>
-      <div class="map"></div>
+      <div id="map"></div>
     </div>
   </div>
   <footer class="app-menu">
@@ -86,11 +86,20 @@
   </footer>
   </div>
 
+  <!-- Firebase libraries from CDN -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+  <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+
   <!-- Firebase API key information -->
-  <script src="/scripts/firebase_api.js"></script>
+  <script src="/1800group10/scripts/firebase_api.js"></script>
 
   <!-- JavaScrips functions -->
-  <script src="scripts/menu.js"> </script>
+  <script src="/1800group10/scripts/menu.js"> </script>
+
+  <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwQgNEiOsPR2maVlX4QfC0Ym0zV62aB5c&callback=initMap">
+  </script>
 
 </body>
 

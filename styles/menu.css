@@ -58,7 +58,7 @@ body{
   color: var(--secondary-color);
 }
 
-.review-text{
+/* .review-text{
   float:left;
   width: 40%;
 }
@@ -68,7 +68,7 @@ body{
   border-radius: 10px;
   text-decoration: none;
   background-color: var(--primary-color);
-}
+} */
 
 .grid{
   display: grid;
@@ -98,8 +98,11 @@ body{
   color: var(--point-color);
 }
 
-.map{
-  content:url(http://placehold.it/350x250)
+#map{
+  margin-top: 30px;
+  height: 400px;
+  width: 100%;
+  border: 3px solid var(--primary-color);
 }
 .app-menu{
   background-color: var(--primary-color);
