@@ -86,7 +86,7 @@ body{
   padding: 5px;
   position: relative;
 }
-.item a{
+.items a{
   text-decoration: none;
   color: var(--secondary-color);
 }
