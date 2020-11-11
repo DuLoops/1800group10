@@ -1,0 +1,145 @@
+:root {
+	--primary-color: #81b0ff;
+	--secondary-color: #263a7a;
+	--point-color: #ffcf00;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+.html,
+body {
+	height: 100%;
+	min-width: 320px;
+	margin-bottom: 60px;
+}
+
+.container {
+	margin: 15px 15px 15px 15px;
+	overflow: hidden;
+}
+
+.app-header {
+	display: inline-block;
+	color: var(--secondary-color);
+	border: var(--secondary-color) solid 2px;
+	border-radius: 10px;
+	padding: 5px;
+	position: sticky;
+}
+
+.app-header p {
+	padding-right: 5px;
+}
+
+.fa-chevron-left {
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+#ratings {
+	margin-top: 15px;
+	border-bottom: black solid 2px;
+	margin-bottom: 0px;
+}
+
+#ratings h1 {
+	font-weight: 500;
+	font-size: 33pt;
+	margin-top: 7px;
+}
+
+#ratings h3 {
+	font-weight: 500;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.fa-star {
+	color: var(--point-color);
+}
+
+.fa-star-half-alt {
+	color: var(--point-color);
+}
+
+.review {
+	display: flex;
+	float: right;
+	padding: 6px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 15pt;
+	font-weight: 500;
+	border: var(--primary-color) solid 2px;
+	background-color: var(--primary-color);
+	border-radius: 15px;
+}
+
+.review a {
+	text-decoration: none;
+	color: black;
+}
+
+#back-button {
+	text-decoration: none;
+	color: var(--secondary-color);
+}
+
+.user-reviews {
+	float: left;
+	width: 100%;
+}
+
+.item {
+	border: #e9ecef;
+	background-color: #e9ecef;
+	border-radius: 5px;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	box-shadow: 0px 2px 2px 0px #dee2e6;
+}
+
+i {
+	margin-bottom: 5px;
+}
+
+.app-footer {
+	/* display:flex;
+  justify-content: space-evenly; */
+	/* Comment out "position: fixed" in order to make
+  footer sticky and uncomment flex: 1 0 auto;
+  flex: 1 0 auto;*/
+	background-color: var(--primary-color);
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+}
+
+.app-footer a {
+	text-decoration: none;
+	color: black;
+}
+
+.app-footer i {
+	font-size: 30px;
+}
+
+.app-footer div {
+	padding: 10px;
+}
+
+.home-menu {
+	box-shadow: inset 0px 0px 10px var(--secondary-color);
+	float: left;
+	width: 50%;
+}
