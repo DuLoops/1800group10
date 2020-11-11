@@ -1,0 +1,13 @@
+:root {
+  --primary-color: #81B0FF;
+  --secondary-color: #263A7A;
+  --point-color: #FFCF00;
+}
+
+
+
+.btn-primary{
+  background-color:var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 5px;
+}
