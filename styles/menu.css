@@ -38,6 +38,8 @@ body{
 
 .main-menu {
   margin: 10px auto 30px;
+  /* text-align: right; */
+
 }
 .main-menu img {
   width:150px;
@@ -50,12 +52,13 @@ body{
   flex-flow: column;
   justify-content: space-evenly;
   height: 130px;
+  
 }
 #gym-link{
   color: var(--secondary-color);
 }
 
-.review-text{
+/* .review-text{
   float:left;
   width: 40%;
 }
@@ -65,7 +68,7 @@ body{
   border-radius: 10px;
   text-decoration: none;
   background-color: var(--primary-color);
-}
+} */
 
 .grid{
   display: grid;
@@ -95,14 +98,15 @@ body{
   color: var(--point-color);
 }
 
-.map{
-  content:url(http://placehold.it/350x250)
+#map{
+  margin-top: 30px;
+  height: 400px;
+  width: 100%;
+  border: 3px solid var(--primary-color);
 }
 .app-menu{
-  /* display:flex;
-  justify-content: space-evenly; */
   background-color: var(--primary-color);
-  position: absolute;
+  position: fixed;
   width:100%;
   bottom:0;
   text-align: center;
