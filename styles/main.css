@@ -108,6 +108,9 @@ a {
 	margin-top: 10px;
 	width:50%;
 }
+.gym-name{
+	font-size: 16pt;
+}
 
 .app-footer {
 	/* display:flex;
