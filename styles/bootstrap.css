@@ -5,6 +5,9 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
+  --primary-color: #81b0ff;
+	--secondary-color: #263a7a;
+	--point-color: #ffcf00;
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
