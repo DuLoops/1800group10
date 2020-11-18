@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+  <!-- GOOGLE FONTS (POPPINS) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+    rel="stylesheet">
+
+  <!-- GOOGLE FONT (ROBOTO) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet"
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous" />
+
+  <!-- CSS LINK -->
+  <link rel="stylesheet" href="/styles/write_review.css"
+    type="text/css">
+  <title>Creating a Review</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <div class="container">
+
+    <header class="app-header">
+      <a href="/HTML/menu.html" id="back-button">
+        <p><i class="fas fa-chevron-left"></i> Back
+      </a>
+    </header>
+
+    <div id="title">
+      <h1>Create a Review</h1>
+    </div>
+    <form action="/action_page.php">
+      <div class="row">
+        <div class="col-100">
+          <input type="text" id="reviewTitle"
+            name="reviewtitle" placeholder="Title..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-100">
+          <textarea id="revi" name="review"
+            placeholder="Review.."
+            style="height:300px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer class="app-footer">
+    <a href="" class="home-page"></a>
+    <div class="home-menu"><i class="fas fa-dumbbell"></i>
+    </div>
+    <a href="" class="profile-page">
+      <div class="profile-menu"><i class="fas fa-user"></i>
+      </div>
+    </a>
+  </footer>
+  <!-- Firebase libraries from CDN -->
+  <script
+    src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+  <script
+    src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+
+  <!-- Firebase API key information -->
+  <script src="../scripts/firebase_api.js"></script>
+
+  <!-- JavaScrips functions -->
+  <script src="../scripts/review.js"> </script>
+</body>
+
+</html>

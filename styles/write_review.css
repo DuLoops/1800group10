@@ -19,6 +19,7 @@ body {
 	height: 100%;
 	min-width: 320px;
 	margin-bottom: 60px;
+	font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -26,66 +27,20 @@ body {
 	overflow: hidden;
 }
 
+/*! The header */
 .app-header {
 	display: inline-block;
 	color: var(--secondary-color);
 	border: var(--secondary-color) solid 2px;
 	border-radius: 5px;
-	padding: 2px;
+	padding: 5px;
 	position: sticky;
-}
-
-.app-header p {
-	padding-right: 5px;
-}
-
-.fa-chevron-left {
-	padding-right: 5px;
-	padding-left: 5px;
-}
-
-#ratings {
-	margin-top: 15px;
-	border-bottom: black solid 2px;
-	margin-bottom: 0px;
-}
-
-#ratings h1 {
-	font-weight: 500;
-	font-size: 33pt;
-	margin-top: 7px;
-}
-
-#ratings h3 {
-	font-weight: 500;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-
-.fa-star {
-	color: var(--point-color);
-}
-
-.fa-star-half-alt {
-	color: var(--point-color);
-}
-
-.review {
-	display: flex;
-	float: right;
-	padding: 6px;
-	margin-top: 20px;
 	margin-bottom: 20px;
-	font-size: 15pt;
-	font-weight: 500;
-	border: var(--point-color) solid 3px;
-	background-color: var(--primary-color);
-	border-radius: 10px;
 }
 
-.review a {
-	text-decoration: none;
-	color: black;
+.app-header:hover {
+	color: var(--point-color);
+	border-color: #ffcf00;
 }
 
 #back-button {
@@ -93,25 +48,64 @@ body {
 	color: var(--secondary-color);
 }
 
-.user-reviews {
+.app-header p {
+	padding-right: 2px;
+	color: var(--secondary-color);
+}
+
+.fa-chevron-left {
+	padding-right: 2px;
+	padding-left: 2px;
+}
+
+/*! insert rest of styling here */
+
+input[type="text"],
+select,
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+
+label {
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+}
+
+input[type="submit"] {
+	background-color: var(--primary-color);
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+	width: 100%;
+}
+
+input[type="submit"]:hover {
+	background-color: var(--secondary-color);
+}
+
+.col-100 {
 	float: left;
 	width: 100%;
+	margin-bottom: 25px;
 }
 
-.item {
-	border: #e9ecef;
-	background-color: #e9ecef;
-	border-radius: 5px;
-	width: 100%;
-	padding: 10px;
-	margin-bottom: 10px;
-	box-shadow: 0px 2px 2px 0px #dee2e6;
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
-i {
-	margin-bottom: 5px;
-}
+/*! insert rest of styling here*/
 
+/*! The footer */
 .app-footer {
 	/* display:flex;
   justify-content: space-evenly; */
