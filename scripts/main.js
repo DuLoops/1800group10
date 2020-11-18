@@ -1,3 +1,5 @@
+
+// Read gym info
 function readMainInfo() {
   db.collection("gyms").doc("01").onSnapshot(function (snap) {
     // console.log(snap.data().name);
