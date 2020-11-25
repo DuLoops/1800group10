@@ -1,7 +1,7 @@
 var img = {
-	one: "/images/anytime-fitness.jpg",
-	two: "/images/stevenash.jpg",
-	three: "/images/fortius.jpg",
+	one: "../images/anytime-fitness.jpg",
+	two: "../images/stevenash.jpg",
+	three: "../images/fortius.jpg",
 };
 localStorage.setItem("gym-img", img);
 
