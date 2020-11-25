@@ -1,129 +1,48 @@
+
+
+/* Basics */
 :root {
-	--primary-color: #81b0ff;
-	--secondary-color: #263a7a;
-	--point-color: #ffcf00;
+  --primary-color: #81B0FF;
+  --secondary-color: #263A7A;
+  --point-color: #FFCF00;
 }
 
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.html,
-body {
-	height: 100%;
-	min-width: 300px;
+body{
+  font-family: 'Roboto',sans-serif;
+  color: var(--secondary-color);
 }
-
-body {
-	font-family: "Roboto", sans-serif;
-	display: flex;
-	flex-direction: column;
+.content{
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
 }
-
-.content {
-	flex: 1 0 auto;
+/* .sub-menu{
+  width: 90%;
+  margin: 0 auto;
+} */
+.clr{
+  clear:both;
 }
-
-.container {
-	width: 100%;
-	margin: 0 auto;
-	padding: 10px;
-	overflow: none;
+.app-header{
+  display: inline-block;
+  color: var(--secondary-color);
+  border: var(--secondary-color) solid 2px;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px 0 5px 10px;
+  position: sticky;
 }
-
-.app-header {
-	background-color: var(--primary-color);
-	box-shadow: 10px 3px 10px #888;
-}
-
-.app-header .container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 15px 7px;
-}
-
-.app-header h4 {
-	color: #ffcf00;
-	text-shadow: #111111;
-	font-size: 26pt;
-	padding-left: 5px;
-	margin-top: 10px;
-	font-family: "Poppins", sans-serif;
-	-webkit-text-stroke: #111111;
-	-webkit-text-stroke-width: 0px;
-}
-
-.app-header .logo {
-	width: 23px;
-}
-
-.sub-header {
-	margin: 0 auto 16 auto;
-	width: 100%;
-	text-align: left;
-	margin-top: 10px;
-}
-
-.sub-header .search {
-	padding: 10px;
-	width: 100%;
-	border-color: var(--secondary-color);
-	border-radius: 10px;
-	position: sticky;
-}
-
-.grid {
-	display: flex;
-	flex-direction: column;
-	margin: 10px auto 30px;
-}
-
-a {
-	text-decoration: none;
-	color: #111111;
-}
-.grid i {
-	text-decoration: none;
-	color: var(--point-color);
-}
-
-.grid .item {
-	border-top: var(--primary-color) solid;
-	margin-bottom: 20px;
-}
-
-.grid .item img {
-	width: 120px;
-	height: 100px;
-	float: left;
-	margin-right: 40px;
-	border-radius: 10px;
-	margin-top: 10px;
-}
-
-.rating {
-	display: flex;
-	flex-flow: column;
-	/* height: 120px; */
-	text-align: right;
-	font-size: 11pt;
-	line-height: 20px;
-	margin-top: 10px;
-	width: 50%;
-}
-.gym-name {
-	font-size: 16pt;
+#back-btn{
+  text-decoration: none;
 }
 
 .app-footer {
-	/* display:flex;
-  justify-content: space-evenly; */
-	/* Comment out "position: fixed" in order to make
-  footer sticky and uncomment flex: 1 0 auto;
-  flex: 1 0 auto;*/
+
 	background-color: var(--primary-color);
 	position: fixed;
 	width: 100%;
@@ -132,7 +51,8 @@ a {
 }
 
 .app-footer i {
-	font-size: 30px;
+  color: var(--secondary-color);
+	font-size: 30px; 
 }
 
 .app-footer div {
@@ -143,4 +63,57 @@ a {
 	box-shadow: inset 0px 0px 10px var(--secondary-color);
 	float: left;
 	width: 50%;
+}
+
+/* For the contents */
+#heading{
+	color:black;
+	margin-top: 15px;
+	border-bottom: var(--secondary-color) solid 2px;
+	margin-bottom: 0px;
+}
+
+#heading h1 {
+	font-weight: 500;
+	font-size: 23pt;
+	margin-top: 7px;
+}
+
+#heading h3 {
+	font-weight: 500;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#heading i{
+  color: var(--point-color);
+}
+
+#container{
+  margin-top:20px;
+  list-style: square inside;
+  
+}
+#container div{
+	border: #e9ecef;
+	background-color: #e9ecef;
+	border-radius: 5px;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+  box-shadow: 0px 2px 2px 0px #dee2e6;
+}
+#container img{
+  display: block;
+  float: right;
+  width:50px;
+}
+.clearfix {
+  overflow: auto;
+}
+#container h2{
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+#container li{
+  font-size: 1.1rem;
 }
