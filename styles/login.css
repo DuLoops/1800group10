@@ -13,7 +13,6 @@
 .html,
 body {
 	height: 100%;
-	min-width: 300px;
 }
 
 body {
@@ -51,7 +50,6 @@ body {
 	text-shadow: #111111;
 	font-size: 26pt;
 	padding-left: 5px;
-	margin-top: 10px;
 	font-family: "Poppins", sans-serif;
 	-webkit-text-stroke: #111111;
 	-webkit-text-stroke-width: 0px;
@@ -113,9 +111,9 @@ a {
 	font-size: 11pt;
 	line-height: 20px;
 	margin-top: 10px;
-	width: 50%;
+	width:50%;
 }
-.gym-name {
+.gym-name{
 	font-size: 16pt;
 }
 
@@ -133,7 +131,7 @@ a {
 }
 
 .app-footer i {
-	font-size: 30px; 
+	font-size: 30px;
 }
 
 .app-footer div {
@@ -141,7 +139,18 @@ a {
 }
 
 .home-menu {
-	box-shadow: inset 0px 0px 10px var(--secondary-color);
+  
 	float: left;
 	width: 50%;
+}
+
+.profile-menu{
+  float:right;
+  width:50%;
+  box-shadow: inset 0px 0px 10px var(--secondary-color);
+}
+
+
+.login-popup{
+  margin-top:100px;
 }
