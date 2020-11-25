@@ -8,9 +8,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
-
-body {
 	font-family: "Roboto", sans-serif;
 }
 
@@ -31,17 +28,24 @@ body {
 	color: var(--secondary-color);
 	border: var(--secondary-color) solid 2px;
 	border-radius: 5px;
-	padding: 2px;
+	padding: 5px;
+	line-height: 0px;
 	position: sticky;
 }
 
+#back-button {
+	text-decoration: none;
+	color: var(--secondary-color);
+}
+
 .app-header p {
-	padding-right: 5px;
+	padding-right: 2px;
+	color: var(--secondary-color);
 }
 
 .fa-chevron-left {
-	padding-right: 5px;
-	padding-left: 5px;
+	padding-right: 2px;
+	padding-left: 2px;
 }
 
 #ratings {
