@@ -41,24 +41,28 @@
     <div id="title">
       <h1>Create a Review</h1>
     </div>
-    <form action="/action_page.php">
-      <div class="row">
-        <div class="col-100">
-          <input type="text" id="reviewTitle"
-            name="reviewtitle" placeholder="Title..">
+
+    <div id="reviewField">
+      <form action="#">
+        <input type="text" placeholder="Title..."
+          id="reviewTitle">
+        <textarea name="" id="reviewContent" cols="48"
+          rows="20" placeholder="Review..."></textarea>
+        <div id="star-rating">
+          <input type="radio" name="rating" id="rating-5">
+          <label for="rating-5" class="fas fa-star"></label>
+          <input type="radio" name="rating" id="rating-4">
+          <label for="rating-4" class="fas fa-star"></label>
+          <input type="radio" name="rating" id="rating-3">
+          <label for="rating-3" class="fas fa-star"></label>
+          <input type="radio" name="rating" id="rating-2">
+          <label for="rating-2" class="fas fa-star"></label>
+          <input type="radio" name="rating" id="rating-1">
+          <label for="rating-1" class="fas fa-star"></label>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-100">
-          <textarea id="revi" name="review"
-            placeholder="Review.."
-            style="height:300px"></textarea>
-        </div>
-      </div>
-      <div class="row">
-        <input type="submit" value="Submit">
-      </div>
-    </form>
+        <button class="btn btn-primary">Submit</button>
+      </form>
+    </div>
   </div>
 
 
@@ -86,7 +90,7 @@
   <script src="../scripts/firebase_api.js"></script>
 
   <!-- JavaScrips functions -->
-  <script src="../scripts/review.js"> </script>
+  <script src="../scripts/write_review.js"> </script>
 </body>
 
 </html>

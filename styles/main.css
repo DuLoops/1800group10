@@ -24,7 +24,6 @@ body {
 
 .content {
 	flex: 1 0 auto;
-	
 }
 
 .container {
@@ -133,7 +132,7 @@ a {
 }
 
 .app-footer i {
-	font-size: 30px; 
+	font-size: 30px;
 }
 
 .app-footer div {
