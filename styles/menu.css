@@ -107,21 +107,31 @@ body{
   width: 100%;
   border: 3px solid var(--primary-color);
 }
-.app-menu{
-  background-color: var(--primary-color);
-  position: fixed;
-  width:100%;
-  bottom:0;
-  text-align: center;
+
+.app-footer {
+	/* display:flex;
+  justify-content: space-evenly; */
+	/* Comment out "position: fixed" in order to make
+  footer sticky and uncomment flex: 1 0 auto;
+  flex: 1 0 auto;*/
+	background-color: var(--primary-color);
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	text-align: center;
 }
-.app-menu i{
-  font-size:30px;
+
+.app-footer i {
+  color: var(--secondary-color);
+	font-size: 30px; 
 }
-.app-menu div{
-  padding:10px;
+
+.app-footer div {
+	padding: 10px;
 }
-.home-menu{
-  box-shadow:inset 0px 0px 10px var(--secondary-color);
-  float:left;
-  width:50%;
+
+.home-menu {
+	box-shadow: inset 0px 0px 10px var(--secondary-color);
+	float: left;
+	width: 50%;
 }

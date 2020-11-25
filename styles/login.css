@@ -131,7 +131,7 @@ a {
 }
 
 .app-footer i {
-	font-size: 30px; 
+	font-size: 30px;
 }
 
 .app-footer div {
@@ -139,7 +139,18 @@ a {
 }
 
 .home-menu {
-	box-shadow: inset 0px 0px 10px var(--secondary-color);
+  
 	float: left;
 	width: 50%;
+}
+
+.profile-menu{
+  float:right;
+  width:50%;
+  box-shadow: inset 0px 0px 10px var(--secondary-color);
+}
+
+
+.login-popup{
+  margin-top:100px;
 }
