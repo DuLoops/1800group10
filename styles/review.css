@@ -52,7 +52,7 @@ body {
 
 #ratings h1 {
 	font-weight: 500;
-	font-size: 33pt;
+	font-size: 23pt;
 	margin-top: 7px;
 }
 
@@ -79,7 +79,6 @@ body {
 	font-size: 15pt;
 	font-weight: 500;
 	border: var(--point-color) solid 3px;
-	background-color: var(--primary-color);
 	border-radius: 10px;
 }
 
@@ -98,7 +97,7 @@ body {
 	width: 100%;
 }
 
-.item {
+#item {
 	border: #e9ecef;
 	background-color: #e9ecef;
 	border-radius: 5px;
