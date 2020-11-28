@@ -88,6 +88,10 @@ body{
 .items a{
   text-decoration: none;
   color: var(--secondary-color);
+  font-size: 18px;
+}
+.items i{
+  font-size:15px ;
 }
 .rating{
   margin-top: 10px;
