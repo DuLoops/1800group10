@@ -23,7 +23,7 @@
     crossorigin="anonymous" />
 
   <!-- CSS LINK -->
-  <link rel="stylesheet" href="/styles/write_review.css"
+  <link rel="stylesheet" href="/styles/sub/write_review.css"
     type="text/css">
   <title>Creating a Review</title>
 
@@ -34,7 +34,7 @@
   <div class="container">
 
     <header class="app-header">
-      <a href="/HTML/sub/review.html" id="back-button">
+      <a href="review.html" id="back-button">
         <p><i class="fas fa-chevron-left"></i> Back
       </a>
     </header>
@@ -90,10 +90,13 @@
     src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
 
   <!-- Firebase API key information -->
-  <script src="/scripts/firebase_api.js"></script>
+  <script src="/scripts/firebase_api.js">
+  </script>
+
+  <script src="../scripts/firebase_api.js"></script>
 
   <!-- JavaScrips functions -->
-  <script src="/scripts/write_review.js"></script>
+  <script src="../scripts/write_review.js"> </script>
 </body>
 
 </html>

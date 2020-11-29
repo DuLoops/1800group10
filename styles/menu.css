@@ -12,7 +12,6 @@
 }
 body{
   font-family: 'Roboto',sans-serif;
-  color: var(--secondary-color);
 }
 .content{
   width: 90%;
@@ -45,7 +44,8 @@ body{
 
 }
 .main-menu img {
-  width:150px;
+  width:160px;
+  height: 140px;
   float: left;
   margin-right: 40px;
   border-radius: 5px;
@@ -89,6 +89,10 @@ body{
 .items a{
   text-decoration: none;
   color: var(--secondary-color);
+  font-size: 18px;
+}
+.items i{
+  font-size:15px ;
 }
 .rating{
   margin-top: 10px;
@@ -109,11 +113,6 @@ body{
 }
 
 .app-footer {
-	/* display:flex;
-  justify-content: space-evenly; */
-	/* Comment out "position: fixed" in order to make
-  footer sticky and uncomment flex: 1 0 auto;
-  flex: 1 0 auto;*/
 	background-color: var(--primary-color);
 	position: fixed;
 	width: 100%;

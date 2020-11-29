@@ -1,7 +1,7 @@
 var img = {
-	one: "/images/anytime-fitness.jpg",
-	two: "/images/stevenash.jpg",
-	three: "/images/fortius.jpg",
+	one: "../images/anytime-fitness.jpg",
+	two: "../images/stevenash.jpg",
+	three: "../images/fortius.jpg",
 };
 localStorage.setItem("gym-img", img);
 
@@ -23,13 +23,9 @@ function getGyms() {
 					getImage(doc.id) +
 					"' alt='gym picture' class='main-img'/><div class='rating'><h3 class='gym-name'>" +
 					name +
-					"</h3><p>Overall Rating</p><span class='overall-rating'><i class='fas fa-star'></i><i class='fas fa-star-half-alt'></i><i class='far fa-star'></i></span></div></div></a>";
-
-				// // Event listener to save doc-id
-				// document.getElementById("01").addEventListener("click", async function(){
-				//   // window.localStorage.setItem("doc-id", doc.id);
-				//   console.log(doc.id + " is clicked");
-				// });
+					"</h3><p>Overall Rating</p><span id='overall-rating'>" + getStars(rating) +" </span></div></div></a>";
+					console.log(getStars(rating));
+				// document.getElementById("overall-rating").innerHTML += stars[rating];
 			});
 		});
 }
@@ -39,15 +35,25 @@ getGyms();
 function clicked(id) {
 	console.log(id + " doc entered");
 	window.localStorage.setItem("doc-id", id);
+	if (id == 1) {
+		setImg = img.one;
+	} else if (id == 2) {
+		setImg = img.two;
+	} else if (id == 3) {
+		setImg = img.three;
+	}
+	window.localStorage.setItem("gym-img", setImg);
 }
 
 //return image
 function getImage(id) {
+	var setImg;
 	if (id == 1) {
-		return img.one;
+		setImg = img.one;
 	} else if (id == 2) {
-		return img.two;
+		setImg = img.two;
 	} else if (id == 3) {
-		return img.three;
+		setImg = img.three;
 	}
+	return setImg;
 }

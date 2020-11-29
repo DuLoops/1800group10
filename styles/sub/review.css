@@ -50,7 +50,7 @@ body {
 
 #ratings {
 	margin-top: 15px;
-	border-bottom: black solid 2px;
+	border-bottom: var(--secondary-color) solid 2px;
 	margin-bottom: 0px;
 }
 

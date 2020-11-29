@@ -1,0 +1,125 @@
+
+
+/* Basics */
+:root {
+  --primary-color: #81B0FF;
+  --secondary-color: #263A7A;
+  --point-color: #FFCF00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto',sans-serif;
+  color: var(--secondary-color);
+}
+.content{
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* .sub-menu{
+  width: 90%;
+  margin: 0 auto;
+} */
+.clr{
+  clear:both;
+}
+.app-header{
+  display: inline-block;
+  color: var(--secondary-color);
+  border: var(--secondary-color) solid 2px;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px 0 5px 10px;
+  position: sticky;
+}
+#back-btn{
+  text-decoration: none;
+}
+
+.app-footer {
+
+	background-color: var(--primary-color);
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+}
+
+.app-footer i {
+  color: var(--secondary-color);
+	font-size: 30px; 
+}
+
+.app-footer div {
+	padding: 10px;
+}
+
+.home-menu {
+	box-shadow: inset 0px 0px 10px var(--secondary-color);
+	float: left;
+	width: 50%;
+}
+
+/* For the contents */
+#heading{
+	color:black;
+	margin-top: 15px;
+	border-bottom: var(--secondary-color) solid 2px;
+	margin-bottom: 0px;
+}
+
+#heading h1 {
+	font-weight: 500;
+	font-size: 23pt;
+	margin-top: 7px;
+}
+#heading h2 {
+	font-weight: 500;
+  margin-top: 7px;
+  font-size: 15pt;
+}
+
+#heading h3 {
+	font-weight: 500;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#heading i{
+  color: var(--point-color);
+}
+
+#container{
+  margin-top:20px;
+  list-style: square inside;
+  
+}
+#container div{
+	border: #e9ecef;
+	background-color: #e9ecef;
+	border-radius: 5px;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+  box-shadow: 0px 2px 2px 0px #dee2e6;
+}
+#container img{
+  display: block;
+  float: right;
+  width:50px;
+}
+.clearfix {
+  overflow: auto;
+}
+#container h2{
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+#container li{
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
