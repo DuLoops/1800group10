@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="/styles/write_review.css"
     type="text/css">
   <title>Creating a Review</title>
+
 </head>
 
 <body>
@@ -44,23 +45,25 @@
 
     <div id="reviewField">
       <form action="#">
-        <input type="text" placeholder="Title..."
-          id="reviewTitle">
-        <textarea name="" id="reviewContent" cols="48"
+        <input type="text" name="Title"
+          placeholder="Title..." id="reviewTitle">
+        <textarea name="Review" id="reviewContent" cols="48"
           rows="20" placeholder="Review..."></textarea>
         <div id="star-rating">
-          <input type="radio" name="rating" id="rating-5">
+          <input type="radio" name="rating" id="ratingFive">
           <label for="rating-5" class="fas fa-star"></label>
-          <input type="radio" name="rating" id="rating-4">
+          <input type="radio" name="rating" id="ratingFour">
           <label for="rating-4" class="fas fa-star"></label>
-          <input type="radio" name="rating" id="rating-3">
+          <input type="radio" name="rating"
+            id="ratingThree">
           <label for="rating-3" class="fas fa-star"></label>
-          <input type="radio" name="rating" id="rating-2">
+          <input type="radio" name="rating" id="ratingTwo">
           <label for="rating-2" class="fas fa-star"></label>
-          <input type="radio" name="rating" id="rating-1">
+          <input type="radio" name="rating" id="ratingOne">
           <label for="rating-1" class="fas fa-star"></label>
         </div>
-        <button class="btn btn-primary">Submit</button>
+        <button id="submit"
+          class="btn btn-primary">Submit</button>
       </form>
     </div>
   </div>
@@ -87,10 +90,10 @@
     src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
 
   <!-- Firebase API key information -->
-  <script src="../scripts/firebase_api.js"></script>
+  <script src="/scripts/firebase_api.js"></script>
 
   <!-- JavaScrips functions -->
-  <script src="../scripts/write_review.js"> </script>
+  <script src="/scripts/write_review.js"></script>
 </body>
 
 </html>
