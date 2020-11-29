@@ -27,6 +27,8 @@ function readMainInfo() {
 
     window.localStorage.setItem("map-lat", snap.data().lat);
     window.localStorage.setItem("map-lng", snap.data().lng);
+    document.getElementById("rating").innerHTML =  getStars(snap.data().ratings[2]);
+
 
   })
 }

@@ -23,13 +23,9 @@ function getGyms() {
 					getImage(doc.id) +
 					"' alt='gym picture' class='main-img'/><div class='rating'><h3 class='gym-name'>" +
 					name +
-					"</h3><p>Overall Rating</p><span class='overall-rating'><i class='fas fa-star'></i><i class='fas fa-star-half-alt'></i><i class='far fa-star'></i></span></div></div></a>";
-
-				// // Event listener to save doc-id
-				// document.getElementById("01").addEventListener("click", async function(){
-				//   // window.localStorage.setItem("doc-id", doc.id);
-				//   console.log(doc.id + " is clicked");
-				// });
+					"</h3><p>Overall Rating</p><span id='overall-rating'>" + getStars(rating) +" </span></div></div></a>";
+					console.log(getStars(rating));
+				// document.getElementById("overall-rating").innerHTML += stars[rating];
 			});
 		});
 }

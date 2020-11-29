@@ -7,6 +7,7 @@ function readPriceInfo() {
     document.getElementById("membership").innerHTML += "<li> Annual Pass: $" + list[2] + "</li>";
     document.getElementById("membership").innerHTML += "<li> Montly Pass: $" + list[1] + "</li>";
     document.getElementById("daily").innerHTML += "<li> Drop-In : $" + list[0] + "</li>";
+    document.getElementById("rating").innerHTML =  getStars(snap.data().ratings[4]);
 
   })
 }

@@ -113,11 +113,6 @@ body{
 }
 
 .app-footer {
-	/* display:flex;
-  justify-content: space-evenly; */
-	/* Comment out "position: fixed" in order to make
-  footer sticky and uncomment flex: 1 0 auto;
-  flex: 1 0 auto;*/
 	background-color: var(--primary-color);
 	position: fixed;
 	width: 100%;

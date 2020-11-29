@@ -10,8 +10,13 @@ function readMainInfo() {
     document.getElementById("gym-link").href = snap.data().website;
     document.getElementById("phone").href = snap.data().phone;
     var gymImg = localStorage.getItem("gym-img")
-    console.log(gymImg);
+    
     document.getElementById("memu-img").src =gymImg;
+    document.getElementById("overall-rating").innerHTML = getStars(snap.data().ratings[0]);
+    document.getElementById("review-rating").innerHTML = getStars(snap.data().ratings[1]);
+    document.getElementById("equipment-rating").innerHTML = getStars(snap.data().ratings[2]);
+    document.getElementById("covid-rating").innerHTML = getStars(snap.data().ratings[3]);
+    document.getElementById("prices-rating").innerHTML = getStars(snap.data().ratings[4]);
 
     window.localStorage.setItem("map-lat", snap.data().lat);
     window.localStorage.setItem("map-lng", snap.data().lng);

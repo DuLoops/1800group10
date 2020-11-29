@@ -11,7 +11,10 @@ function readMainInfo() {
     console.log(services);
     for (const key in covid) {
       document.getElementById("covid").innerHTML += "<li>" + covid[key] + "</li>";
+    
     }
+    document.getElementById("rating").innerHTML =  getStars(snap.data().ratings[3]);
+
   })
 }
 readMainInfo();
