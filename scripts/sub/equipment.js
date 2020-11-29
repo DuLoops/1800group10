@@ -7,17 +7,15 @@ function readMainInfo() {
     var lower = snap.data().equipment.available.lowerbody;
     var upper = snap.data().equipment.available.upperbody;
     for (const key in cardio){
-      console.log(cardio[key]);
+      // console.log(cardio[key]);
       document.getElementById("cardio").innerHTML += "<li>" + cardio[key] + "</li>";
     }
 
     for (const key in lower){
-      console.log(cardio[key]);
       document.getElementById("lowerbody").innerHTML += "<li>" + lower[key] + "</li>";
     }
     
     for (const key in upper){
-      console.log(cardio[key]);
       document.getElementById("upperbody").innerHTML += "<li>" + upper[key] + "</li>";
     }
     // var obj = JSON.parse(snap.data().equipment);

@@ -57,7 +57,7 @@ body {
 }
 
 .app-header .logo {
-	width: 23px;
+	width: 30px;
 }
 
 .sub-header {
@@ -96,10 +96,10 @@ a {
 }
 
 .grid .item img {
-	width: 120px;
+	width: 150px;
 	height: 100px;
 	float: left;
-	margin-right: 40px;
+	margin-right: 20px;
 	border-radius: 10px;
 	margin-top: 10px;
 }

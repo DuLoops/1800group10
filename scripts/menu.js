@@ -9,8 +9,9 @@ function readMainInfo() {
     document.getElementById("gym-name").innerText = snap.data().name;
     document.getElementById("gym-link").href = snap.data().website;
     document.getElementById("phone").href = snap.data().phone;
-    // var gymImg = localStorage.getItem("gym-img")
-    //document.getElementById("menu-img").src = "/images/full-logo.png";
+    var gymImg = localStorage.getItem("gym-img")
+    console.log(gymImg);
+    document.getElementById("memu-img").src =gymImg;
 
     window.localStorage.setItem("map-lat", snap.data().lat);
     window.localStorage.setItem("map-lng", snap.data().lng);

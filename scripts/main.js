@@ -39,15 +39,25 @@ getGyms();
 function clicked(id) {
 	console.log(id + " doc entered");
 	window.localStorage.setItem("doc-id", id);
+	if (id == 1) {
+		setImg = img.one;
+	} else if (id == 2) {
+		setImg = img.two;
+	} else if (id == 3) {
+		setImg = img.three;
+	}
+	window.localStorage.setItem("gym-img", setImg);
 }
 
 //return image
 function getImage(id) {
+	var setImg;
 	if (id == 1) {
-		return img.one;
+		setImg = img.one;
 	} else if (id == 2) {
-		return img.two;
+		setImg = img.two;
 	} else if (id == 3) {
-		return img.three;
+		setImg = img.three;
 	}
+	return setImg;
 }
