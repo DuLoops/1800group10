@@ -16,6 +16,7 @@ db.collection("gyms").doc("1").set({
       upperbody:["Bench press"]
     }
   }
+  
 })
 .then(function() {
   console.log("Document successfully written!");
