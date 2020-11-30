@@ -12,6 +12,7 @@
 }
 body{
   font-family: 'Roboto',sans-serif;
+  color:var(--secondary-color);
 }
 .content{
   width: 90%;
@@ -47,44 +48,49 @@ body{
   width:160px;
   height: 140px;
   float: left;
-  margin-right: 40px;
+  margin-right: 20px;
   border-radius: 5px;
 }
 .gym-info{
   display: flex;
   flex-flow: column;
   justify-content: space-evenly;
-  height: 130px;
+  min-height: 100px;
   
 }
 .main-menu a{
   color: var(--secondary-color);
+  margin:0;
+}
+.main-menu h3{
+  margin-bottom: 10px;
 }
 
-/* .review-text{
-  float:left;
-  width: 40%;
-}
-#review-link{
-  float: right;
-  padding: 15px 40px;
-  border-radius: 10px;
-  text-decoration: none;
-  background-color: var(--primary-color);
-} */
 
-.grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 80px;
-  grid-gap: 5px;
-  margin: 20px 0;
-}
 .item{
+  margin: 5px 0;
+  display: block;
+  height: 80px;
   background-color: var(--primary-color);
   border-radius: 5px;
   padding: 5px;
+  text-align: center;
   position: relative;
+  z-index: 1;
+}
+ #reviewp{
+   margin-top:15px;
+ }
+#equipp{
+  margin-top:15px;
+}
+#equip{
+  float:left;
+  width: 49%;
+}
+#rate{
+  width:49%;
+  float: right;
 }
 .items a{
   text-decoration: none;
@@ -105,8 +111,29 @@ body{
   color: var(--point-color);
 }
 
+.prices{
+  margin:20px 0;
+  padding: 10px;
+  background-color: #e9ecef;
+  overflow: auto;
+  border-radius: 5px;
+  line-height: 135%;
+}
+
+.prices h2{
+  margin-bottom: 10px;
+  font-size:1.4rem;
+}
+#membership{
+  float:left;
+  width:50%;
+}
+#daily{
+  float:right;
+  width: 40%
+}
 #map{
-  margin: 30px 0 60px;
+  margin-bottom: 60px;
   height: 400px;
   width: 100%;
   border: 3px solid var(--primary-color);

@@ -16,15 +16,25 @@ function readMainInfo() {
     document.getElementById("review-rating").innerHTML = getStars(snap.data().ratings[1]);
     document.getElementById("equipment-rating").innerHTML = getStars(snap.data().ratings[2]);
     document.getElementById("covid-rating").innerHTML = getStars(snap.data().ratings[3]);
-    document.getElementById("prices-rating").innerHTML = getStars(snap.data().ratings[4]);
-
+    
     window.localStorage.setItem("map-lat", snap.data().lat);
     window.localStorage.setItem("map-lng", snap.data().lng);
 
   })
 }
 readMainInfo();
+function readPriceInfo() {
+  db.collection("gyms").doc(id).onSnapshot(function (snap) {
+    var list = snap.data().prices;
+    console.log(list[0]);
+    document.getElementById("membership").innerHTML += "<li>Annual Pass: $" + list[2] + "</li>";
+    document.getElementById("membership").innerHTML += "<li>Montly Pass: $" + list[1] + "</li>";
+    document.getElementById("daily").innerHTML += "<li>Drop-In: $" + list[0] + "</li>";
+    // document.getElementById("rating").innerHTML =  getStars(snap.data().ratings[4]);
 
+  })
+}
+readPriceInfo();
 
 
 

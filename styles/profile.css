@@ -1,0 +1,135 @@
+:root {
+	--primary-color: #81b0ff;
+	--secondary-color: #263a7a;
+	--point-color: #ffcf00;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.html,
+body {
+	/* height: 100%; */
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	display: flex;
+	flex-direction: column;
+}
+
+.headcontainer {
+	width: 100%;
+	margin: 0 auto;
+	padding: 10px;
+	overflow: none;
+}
+
+.app-header {
+	background-color: var(--primary-color);
+	box-shadow: 10px 3px 10px #888;
+}
+
+.app-header .headcontainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 15px 7px;
+}
+
+.app-header h4 {
+	color: #ffcf00;
+	text-shadow: #111111;
+	font-size: 26pt;
+	padding-left: 5px;
+	font-family: "Poppins", sans-serif;
+	-webkit-text-stroke: #111111;
+	-webkit-text-stroke-width: 0px;
+}
+
+.app-header .logo {
+	width: 23px;
+}
+.app-footer {
+	background-color: var(--primary-color);
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+  text-align: center;
+}
+
+.app-footer i {
+  color:#111;
+
+	font-size: 30px;
+}
+
+.app-footer div {
+	padding: 10px;
+}
+
+.home-menu {
+	float: left;
+	width: 50%;
+}
+
+.profile-menu {
+	float: right;
+	width: 50%;
+	box-shadow: inset 0px 0px 10px var(--secondary-color);
+}
+
+.main{
+  color: var(--secondary-color);
+  border: #e9ecef;
+	background-color: #e9ecef;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 15px;
+  box-shadow: 0px 2px 2px 0px #dee2e6;
+}
+#reviews{
+  color: var(--secondary-color);
+  border: #e9ecef;
+	background-color: #e9ecef;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 15px;
+  box-shadow: 0px 2px 2px 0px #dee2e6;
+}
+#name{
+	margin-bottom:20px;
+}
+#email{
+	margin-bottom: 20px;
+}
+
+#logout{
+	color:var(--secondary-color);
+	background-color: var(--primary-color);
+	border: 1px solid var(--secondary-color);
+	padding: 5px;
+	border-radius: 5px;
+}
+#reviews i{
+	color:var(--point-color); 
+}
+
+.item{ 
+	background-color: var(--primary-color);
+	padding: 5px 10px 10px;
+}
+
+.item-content{
+	background-color: #ffffff;
+	border-radius: 5px;
+	color:black;
+	overflow:auto;
+	padding: 5px;
+}
+.item-content i{
+	float:right;
+}

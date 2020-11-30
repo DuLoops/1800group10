@@ -24,7 +24,7 @@ function getGyms() {
 					"' alt='gym picture' class='main-img'/><div class='rating'><h3 class='gym-name'>" +
 					name +
 					"</h3><p>Overall Rating</p><span id='overall-rating'>" + getStars(rating) +" </span></div></div></a>";
-					console.log(getStars(rating));
+
 				// document.getElementById("overall-rating").innerHTML += stars[rating];
 			});
 		});
