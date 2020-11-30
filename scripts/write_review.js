@@ -9,8 +9,7 @@ submitBtn.addEventListener("click", function () {
 
 	//** Access the Database Collection */
 	db.collection("review")
-		.doc("review1")
-		.set({
+		.add({
 			Title: reviewTitleInput,
 			Review: reviewContentInput,
 		})
@@ -19,5 +18,5 @@ submitBtn.addEventListener("click", function () {
 		})
 		.catch(function (error) {
 			console.log(error);
-		});
+		}, false);
 });
