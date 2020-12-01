@@ -15,11 +15,15 @@ var uiConfig = {
             // The Firestore rules must allow the user to write. 
             //------------------------------------------------------------------------------------------
             var user = authResult.user;
+            window.localStorage.setItem("userID", user.uid);
+            // console.log("Doc id saved: " + user.uid);
             if (authResult.additionalUserInfo.isNewUser) {
+                
                 db.collection("users").doc(user.uid).set({
                         name: user.displayName,
                         email: user.email
                     }).then(function () {
+                        
                         console.log("New user added to firestore");
                         window.location.assign("main.html");
                     })
@@ -34,7 +38,7 @@ var uiConfig = {
         uiShown: function () {
             // The widget is rendered.
             // Hide the loader.
-            document.getElementById('loader').style.display = 'none';
+            // document.getElementById('loader').style.display = 'none';
         }
     },
     // Will use popup for IDP Providers sign-in flow instead of the default, redirect.

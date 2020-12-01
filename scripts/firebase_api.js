@@ -31,7 +31,7 @@ firebase.initializeApp(firebaseConfig);
   }
   
   function getStars(ratings){
-    return stars[ratings].toString();
+    return stars[ratings];
   }
   var stringToHTML = function (str) {
     var dom = document.createElement('div');

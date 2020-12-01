@@ -6,7 +6,7 @@ function getUser() {
                 .doc(user.uid)
                 .get()
                 .then(function (doc) {
-                    window.localStorage.setItem("userID", doc.id);
+                    
                     var name = doc.data().name;
                     var email = doc.data().email;
                     document.getElementById("name").innerText = name;
