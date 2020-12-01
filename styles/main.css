@@ -35,7 +35,7 @@ body {
 
 .app-header {
 	background-color: var(--primary-color);
-	box-shadow: 10px 3px 10px #888;
+	box-shadow: 1px 3px 10px #888;
 }
 
 .app-header .container {

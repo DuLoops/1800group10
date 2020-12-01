@@ -3,18 +3,22 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
 
   <!-- CSS menu.css -->
-  <link rel="stylesheet" href="../styles/menu.css">
+  <link rel="stylesheet" href="/styles/menu.css">
 
   <!-- Google Fonts (Roboto) -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
     rel="stylesheet">
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet"
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous" />
   <title>Menu</title>
 </head>
 
@@ -24,11 +28,13 @@
   </div> -->
   <div class="container">
     <header class="app-header">
-      <a id="back-btn" href="main.html"><i class="fas fa-chevron-left"></i> Back</a>
+      <a id="back-btn" href="main.html"><i
+          class="fas fa-chevron-left"></i> Back</a>
     </header>
     <div class="content">
       <div class="main-menu">
-        <img src="../images/full-logo.png" alt="gym picture" id="memu-img" />
+        <img src="../images/full-logo.png" alt="gym picture"
+          id="memu-img" />
         <h3 id="gym-name">Gym Name</h3>
         <div class="gym-info">
           <a href="" id="gym-link" target="_blank">Gym
@@ -43,29 +49,41 @@
       <div class="sub-menu">
 
         <div class="items">
-            <a href="sub/review.html" class="item">
-              <p id="reviewp">Review</p>
-          <span class="rating" id="review-rating"></span>
+          <a href="/HTML/sub/review.html" class="item">
+            <p id="reviewp">Review</p>
+            <span class="rating" id="review-rating"></span>
           </a>
-          <a href="sub/equipment.html" class="item" id="equip">
-            <p id="equipp">Equipment</p>
-            <span class="rating" id="equipment-rating"></span>
+          <a href="sub/equipment.html" class="item">
+            <p>Equipment</p>
+            <span class="rating"
+              id="equipment-rating"></span>
           </a>
-          <a href="sub/covid.html" class="item" id="rate">
+          <a href="sub/covid.html" class="item">
             <p>Services & </p>
-            <p style="font-size: 17px">COVID-19 Protocols</p>
-            <span class="rating" id="covid-rating"></span>
-          </a>
-          <div class="clr"></div>
-          <div class="prices">
-            <h2>Pricing</h2>
-            <div id="membership">
-              <h4>MemberShip</h4>
+            <p style="font-size: small">COVID-19 Regulations
+            </p>
+            <a href="sub/equipment.html" class="item"
+              id="equip">
+              <p id="equipp">Equipment</p>
+              <span class="rating"
+                id="equipment-rating"></span>
+            </a>
+            <a href="sub/covid.html" class="item" id="rate">
+              <p>Services & </p>
+              <p style="font-size: 17px">COVID-19 Protocols
+              </p>
+              <span class="rating" id="covid-rating"></span>
+            </a>
+            <div class="clr"></div>
+            <div class="prices">
+              <h2>Pricing</h2>
+              <div id="membership">
+                <h4>MemberShip</h4>
+              </div>
+              <div id="daily">
+                <h4>Drop-In</h4>
+              </div>
             </div>
-            <div id="daily">
-              <h4>Drop-In</h4>
-            </div>
-          </div>
         </div>
 
       </div>
@@ -84,10 +102,14 @@
     </a>
   </footer>
   <!-- Firebase libraries from CDN -->
-  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
-  <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+  <script
+    src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
 
   <!-- Firebase API key information -->
   <script src="../scripts/firebase_api.js"></script>
@@ -98,7 +120,7 @@
   <!-- google map api -->
   <script defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwQgNEiOsPR2maVlX4QfC0Ym0zV62aB5c&callback=initMap">
-  </script>
+    </script>
 
 </body>
 
