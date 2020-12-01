@@ -16,8 +16,6 @@ function readMainInfo() {
     for (const key in snap.data().hours) {
       document.getElementById("hours").innerHTML += "<li>" + days[key] + ": " + snap.data().hours[key] + "</li>";
     }
-
-
   });
 }
 var days = {
@@ -29,7 +27,5 @@ var days = {
   5: "Sat",
   6: "Sun",
 }
-
-
 
 readMainInfo();

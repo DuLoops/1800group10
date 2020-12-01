@@ -1,25 +1,26 @@
 function getUser() {
-    firebase.auth().onAuthStateChanged(function (user) {
-        if (user) {
-            console.log("user is signed in");
-            db.collection("users")
-                .doc(user.uid)
-                .get()
-                .then(function (doc) {
-                    
-                    var name = doc.data().name;
-                    var email = doc.data().email;
-                    document.getElementById("name").innerText = name;
-                    document.getElementById("email").innerText = email;
-                })
-        } else {
-            console.log("no user is signed in");
-        }
-    })
+	firebase.auth().onAuthStateChanged(function (user) {
+		if (user) {
+			console.log("user is signed in");
+			db.collection("users")
+				.doc(user.uid)
+				.get()
+				.then(function (doc) {
+
+					var name = doc.data().name;
+					var email = doc.data().email;
+					document.getElementById("name").innerText = name;
+					document.getElementById("email").innerText = email;
+				})
+		} else {
+			console.log("no user is signed in");
+		}
+	})
 }
 getUser();
 
 const userID = localStorage.getItem("userID");
+const docID = localStorage.getItem("doc-id");
 // console.log(userID);
 
 function getReviews() {
@@ -55,8 +56,21 @@ function readDocReview(docid, gymName) {
 						doc.data().text +
 						"</p>" +
 						getStars(doc.data().rating) +
-						"</div></div>";
+						"</div><div class='reviewButton'><button class='edit' onclick='editReview()'>Edit</button><button class='delete' onclick='deleteReview()'>Delete</button></div></div>";
 				}
 			});
 		});
+}
+
+function deleteReview() {
+	db.collection("gyms").doc(docID).collection("review").doc(userID).delete().then(function () {
+		console.log("Document successfully deleted!");
+		window.location.href="profile.html"
+	}).catch(function (error) {
+		console.error("Error removing document: ", error);
+	});
+}
+
+function editReview(){
+	window.location.href="sub/write_review.html";
 }

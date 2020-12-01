@@ -10,10 +10,7 @@
 	padding: 0;
 }
 
-.html,
-body {
-	/* height: 100%; */
-}
+
 
 body {
 	font-family: "Roboto", sans-serif;
@@ -63,7 +60,6 @@ body {
 
 .app-footer i {
   color:#111;
-
 	font-size: 30px;
 }
 
@@ -130,6 +126,11 @@ body {
 	overflow:auto;
 	padding: 5px;
 }
-.item-content i{
-	float:right;
+
+.reviewButton button{
+	/* background-color: var(--secondary-color); */
+	border: 1px solid var(--point-color);
+	margin: 5px;
+	padding: 0px 2px;
+
 }

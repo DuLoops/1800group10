@@ -17,37 +17,59 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
   <!-- CSS LINK -->
-  <link rel="stylesheet" href="../../styles/sub/review.css">
-  <title>Review</title>
+  <link rel="stylesheet" href="../../styles/sub/write_review.css"text="text/css">
+
+  <title>Creating a Review</title>
+
 </head>
 
 <body>
+  <!-- HEADER -->
   <div class="container">
+
     <header class="app-header">
-      <a id="back-btn" href="../menu.html"><i
-          class="fas fa-chevron-left"></i> Back</a>
+      <a href="review.html" id="back-button">
+        <p><i class="fas fa-chevron-left"></i> Back
+      </a>
     </header>
 
-    <div id="header">
-      <h2>Ratings and Reviews</h2>
-      <h3>Rating: <span id="overall-rating"></span></h3>
-
-      <a id="write-review" href="write_review.html">Write a Review</a>
-
+    <div id="title">
+      <h1>Create a Review</h1>
     </div>
 
-    <div id="user-reviews"></div>
+    <div id="reviewField">
+      <form action="#" id="reviewForm">
+        <input type="text" name="title" placeholder="Title..." id="reviewTitle">
+        <textarea name="review" id="reviewContent" cols="48" rows="20" placeholder="Review..."></textarea>
+        <div id="star-rating">
+          <input type="radio" name="rating" id="rating-5">
+          <label for="rating-5" class="fas fa-star"></label>
+          <input type="radio" name="rating" id="rating-4">
+          <label for="rating-4" class="fas fa-star"></label>
+          <input type="radio" name="rating" id="rating-3">
+          <label for="rating-3" class="fas fa-star"></label>
+          <input type="radio" name="rating" id="rating-2">
+          <label for="rating-2" class="fas fa-star"></label>
+          <input type="radio" name="rating" id="rating-1">
+          <label for="rating-1" class="fas fa-star"></label>
+        </div>
+        <button id="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
   </div>
 
+
+  <!-- FOOTER -->
   <footer class="app-footer">
-    <a href="../main.html" class="home-page">
+    <a href="../main.html" class="home-page"></a>
     <div class="home-menu"><i class="fas fa-dumbbell"></i>
-    </div></a>
+    </div>
     <a href="../profile.html" class="profile-page">
       <div class="profile-menu"><i class="fas fa-user"></i>
       </div>
     </a>
   </footer>
+
 
   <!-- Firebase libraries from CDN -->
   <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
@@ -58,8 +80,10 @@
   <!-- Firebase API key information -->
   <script src="../../scripts/firebase_api.js"></script>
 
+
+
   <!-- JavaScrips functions -->
-  <script src="../../scripts/sub/review.js"> </script>
+  <script src="../../scripts/sub/write_reivew.js"> </script>
 </body>
 
 </html>

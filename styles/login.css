@@ -66,3 +66,22 @@ body {
 	transform: translateY(-50%);
 	width: 100%;
 }
+
+.main{
+	/* display: block; */
+	width:80%;
+	background-color: var(--primary-color);
+	margin: 20vh auto;
+	border-radius: 10px;
+	box-shadow: 0px 0px 50px var(--secondary-color);
+	text-align: center;
+}
+.main a{
+	color: var(--secondary-color);
+	font-family: "Roboto", sans-serif;
+	font-size: 2rem;
+
+}
+.main img{
+	width: 100%;
+}
