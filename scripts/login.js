@@ -15,6 +15,7 @@ var uiConfig = {
 			// The Firestore rules must allow the user to write.
 			//------------------------------------------------------------------------------------------
 			var user = authResult.user;
+			window.localStorage.setItem("userID", user.uid);
 			if (authResult.additionalUserInfo.isNewUser) {
 				db.collection("users")
 					.doc(user.uid)

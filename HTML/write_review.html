@@ -44,10 +44,10 @@
     </div>
 
     <div id="reviewField">
-      <form action="#" id="reviewInput">
-        <input type="text" name="Title"
+      <form action="#" id="reviewForm">
+        <input type="text" name="title"
           placeholder="Title..." id="reviewTitle">
-        <textarea name="Review" id="reviewContent" cols="48"
+        <textarea name="review" id="reviewContent" cols="48"
           rows="20" placeholder="Review..."></textarea>
         <div id="star-rating">
           <input type="radio" name="rating" id="ratingFive">
@@ -90,10 +90,15 @@
     src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
 
   <!-- Firebase API key information -->
-  <script src="/scripts/firebase_api.js"></script>
+  <script src="/scripts/firebase_api.js">
+  </script>
 
   <!-- JavaScrips functions -->
-  <script src="/scripts/sub/write_reivew.js"> </script>
+  <script src="/scripts/write_review.js"></script>
+  <!-- <script src="../scripts/firebase_api.js"></script> -->
+
+  <!-- JavaScrips functions -->
+  <script src="../scripts/write_review.js"> </script>
 </body>
 
 </html>

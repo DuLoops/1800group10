@@ -1,22 +1,27 @@
-const submitBtn = document.querySelector("#submit");
+var form = document.querySelector("#reviewForm");
+const userID = localStorage.getItem("userID");
+console.log(userID);
+const docID = localStorage.getItem("doc-id");
+console.log(docID);
 
-let reviewTitle = document.querySelector("#reviewTitle");
-let reviewContent = document.querySelector("#reviewContent");
+function setReview() {
+	db.collection("gyms").doc(docID).collection("review");
+}
 
-submitBtn.addEventListener("click", function () {
-	let reviewTitleInput = reviewTitle.value;
-	let reviewContentInput = reviewContent.value;
-
-	//** Access the Database Collection */
-	db.collection("review")
+//* Saving review data
+form.addEventListener("submit", (e) => {
+	db.collection("gyms")
+		.doc(docID)
+		.collection("review")
+		.doc(userID)
 		.add({
-			Title: reviewTitleInput,
-			Review: reviewContentInput,
+			Title: form.title.value,
+			Review: form.review.value,
 		})
 		.then(function () {
-			console.log("Data Saved");
+			console.log("Data has been saved successfully");
 		})
-		.catch(function (error) {
-			console.log(error);
-		}, false);
+		.catch(function () {
+			console.error("Error withing document: " + error);
+		});
 });
