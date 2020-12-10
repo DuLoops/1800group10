@@ -1,6 +1,8 @@
 // Read gym name and set website and phone number.
 var id = localStorage.getItem("doc-id");
 
+
+// Load equipments
 function readMainInfo() {
   db.collection("gyms").doc(id).onSnapshot(function (snap) {
     var cardio = snap.data().equipment.available.cardio;
@@ -33,21 +35,3 @@ function readMainInfo() {
   })
 }
 readMainInfo();
-
-// docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
-//   @Override
-//   public void onComplete(@NonNull Task<DocumentSnapshot> task) {
-//       if (task.isSuccessful()) {
-//           DocumentSnapshot document = task.getResult();
-//           if (document != null) {
-//               Log.d(TAG, "DocumentSnapshot data: " + task.getResult().getData());
-//               for(Object item : task.getResult().getData().values())
-//                   allowedData.add(item.toString());
-//           } else {
-//               Log.d(TAG, "No such document");
-//           }
-//       } else {
-//           Log.d(TAG, "get failed with ", task.getException());
-//       }
-//   }
-// });

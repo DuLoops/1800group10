@@ -4,12 +4,13 @@ var userID = localStorage.getItem("userID");
 var docID = localStorage.getItem("doc-id");
 // console.log(docID);
 
+
 //* Saving review data
 form.addEventListener("submit", (e) => {
-  // let selected = document.querySelector("input[type='radio']:checked");
   e.preventDefault();
+  getUser();
   var userName = localStorage.getItem("userName");
-  // console.log(getRating());
+  // console.log("user name is " + userName);
   var rate = getRating();
   db.collection("gyms")
     .doc(docID)
@@ -32,6 +33,7 @@ form.addEventListener("submit", (e) => {
     
 });
 
+// set username to write a review.
 function getUser() {
   firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
@@ -41,8 +43,8 @@ function getUser() {
         .get()
         .then(function (doc) {
           name = doc.data().name;
+          // console.log("user name is " + name);
           window.localStorage.setItem("userName", name);
-          return name;
         })
     } else {
       console.log("no user is signed in");
@@ -50,7 +52,8 @@ function getUser() {
   })
 }
 
-//radio button to stars
+//radio button stars to ratings in int
+// return rating in int out of 5
 function getRating() {
   var radios = document.getElementsByName('rating');
   for (var i = 0; i < 5; i++) {

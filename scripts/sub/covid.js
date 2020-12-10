@@ -1,5 +1,7 @@
 var id = localStorage.getItem("doc-id");
 
+
+// Load Coivd & other services.
 function readMainInfo() {
   db.collection("gyms").doc(id).onSnapshot(function (snap) {
     var covid = snap.data().covid;

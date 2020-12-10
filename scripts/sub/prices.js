@@ -1,5 +1,7 @@
 var id = localStorage.getItem("doc-id");
 
+
+// Load prices
 function readPriceInfo() {
   db.collection("gyms").doc(id).onSnapshot(function (snap) {
     var list = snap.data().prices;

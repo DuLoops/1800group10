@@ -5,6 +5,8 @@ var img = {
 };
 localStorage.setItem("gym-img", img);
 
+
+// Post gyms on the main page
 function getGyms() {
 	db.collection("gyms")
 		.get()

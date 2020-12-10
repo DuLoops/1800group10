@@ -1,3 +1,5 @@
+
+// Load user infos
 function getUser() {
 	firebase.auth().onAuthStateChanged(function (user) {
 		if (user) {
@@ -23,6 +25,8 @@ const userID = localStorage.getItem("userID");
 const docID = localStorage.getItem("doc-id");
 // console.log(userID);
 
+
+// Load user reviews
 function getReviews() {
 	db.collection("gyms")
 		.get()
@@ -36,6 +40,7 @@ function getReviews() {
 }
 getReviews();
 
+//  Support getReviews()
 function readDocReview(docid, gymName) {
 	db.collection("gyms")
 		.doc(docid)
@@ -62,6 +67,8 @@ function readDocReview(docid, gymName) {
 		});
 }
 
+
+// Delete reviews
 function deleteReview() {
 	db.collection("gyms").doc(docID).collection("review").doc(userID).delete().then(function () {
 		console.log("Document successfully deleted!");
@@ -71,6 +78,8 @@ function deleteReview() {
 	});
 }
 
+
+// Edit reviews
 function editReview(){
 	window.location.href="sub/write_review.html";
 }

@@ -18,6 +18,8 @@ firebase.initializeApp(firebaseConfig);
 // Henceforce, any reference to the database can be made with "db"
 const db = firebase.firestore();
 
+
+
 //ratings
   const stars = {
     0: "<i class = 'far fa-star' ></i><i class = 'far fa-star' ></i><i class = 'far fa-star' ></i><i class = 'far fa-star' ></i><i class = 'far fa-star' ></i>",

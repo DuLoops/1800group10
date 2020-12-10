@@ -3,6 +3,7 @@
 // Read gym name and set website and phone number.
 var id = localStorage.getItem("doc-id");
 
+// read main info about the gym.
 function readMainInfo() {
   db.collection("gyms").doc(id).onSnapshot(function (snap) {
     //console.log(snap.data().name);

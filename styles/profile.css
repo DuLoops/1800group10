@@ -117,6 +117,7 @@ body {
 .item{ 
 	background-color: var(--primary-color);
 	padding: 5px 10px 10px;
+	margin-bottom: 10px;
 }
 
 .item-content{

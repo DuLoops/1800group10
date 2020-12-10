@@ -14,6 +14,8 @@ function readMainInfo() {
 				});
 		});
 }
+
+// Post ratings
 readMainInfo();
 function readRating() {
   db.collection("gyms").doc(docID).onSnapshot(function (snap) {
